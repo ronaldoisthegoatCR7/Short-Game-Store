@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>Gaming shop</title>
+    <link rel="stylesheet" href="play.css">
+</head>  
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="../game folder/Playstation.png" class="Playstation">
+            <nav>
+                <ul id="swishList">
+                    <li><a href="game controllers">Game Controllers</a></li>
+                    <li><a href="vr accessories">VR Accessories</a></li>
+                    <li><a href="media remotes">Media Remotes</a></li>
+                    <li><a href="others">Others</a></li>
+                </ul>
+            </nav>
+            <img src="../game folder/swish.png" class="menu-icon" 
+            onclick="togglemenu()">
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <h2>PS4 V2<br>Dualshock 4</h2>
+                <h3>Wireless Controller for Playstation 4</h3>
+                <p>(Compatible/Generic)</p> 
+                <h4>789.99$</h4>
+                <button type="button">Buy Now<img src="../game folder/arrow.png">
+                </button>
+            </div>
+            <div class="col-2">
+                <img src="../game folder/controller.png" class="controller">
+                <div class="color-box"></div>
+                <div class="add btn">
+                    <img src="../game folder/plus.png">
+                    <p><small>Add to Cart</small></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <img src="../game folder/facebook.png">
+            <img src="../game folder/twitter.png">
+            <img src="../game folder/instagram.png">
+        </div>
+ 
+    </div>
+
+    <script>
+
+        var swishList = document.getElementById("swishList");
+
+        swishList.style.maxHeight = "0px";
+
+        function toggleswish(){
+
+            if(swishList.style.maxHeight = "0px")
+                {
+                    swishList.style.maxHeight = "130px";    
+                }
+            else
+                {
+                    swishList.style.maxHeight = "0px";
+                }  
+
+        }
+
+    </script>
+
+</body>  
+</html>
